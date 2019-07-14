@@ -129,7 +129,7 @@ img {
 	max-width: 100%;
 	height:auto;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
 }
 
 a {
@@ -170,6 +170,10 @@ a {
 }
 
 /* Conainers and all this */
+.container{
+  width: 100%;
+}
+
 .container,
 .display-containe {
 	padding: 0.02rem 1rem;
@@ -189,9 +193,11 @@ a {
 .bar .bar-item {
 	padding: 0.5rem 1rem;
 	width: auto;
-	display: block;
-	outline: 0;
-	float: left;
+  outline: 0;
+  /*
+  display: block;
+  float: left;
+  */
 }
 
 .border-bottom {
