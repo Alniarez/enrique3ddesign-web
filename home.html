@@ -31,24 +31,54 @@
   <img src="img/animated-banner.gif" alt="Enrique3d Design's logo" class="image">
 </header>
 
-<nav class="bar center blue transition animate-opacity">
+<nav class="bar center blue transition animate-opacity sticky-nav">
     <a class="bar-item button" href="home.html">Home</a>
     <a class="bar-item button" href="projects-3d.html">Proyectos 3D</a>
     <a class="bar-item button" href="projects-2d.html">Proyectos 2D</a>
     <a class="bar-item button" href="projects-av.html">Proyectos audiovisuales</a>
 </nav>
 
-<main class="container center">
-  <h2>Main content</h2>
-  <img src="img/logo.png" alt="Enrique3d Design's logo" style="width: 450px;">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at dignissim ante. In vel orci pharetra nisl imperdiet interdum. Etiam facilisis porttitor magna in pellentesque. Donec in suscipit nunc, rhoncus efficitur tellus. Proin at accumsan massa. Donec eu tellus eleifend, sagittis orci non, finibus nisi. Aliquam luctus leo sapien, ut molestie massa elementum maximus. Vivamus feugiat vehicula ultricies. Integer rhoncus id orci a tincidunt. Duis egestas nisl vitae eleifend facilisis. Aenean luctus bibendum est sed pulvinar. Fusce semper risus at lacinia dictum.</p>
-  <p>Fusce in blandit orci. Phasellus interdum posuere faucibus. Integer in fermentum risus, id maximus magna. In accumsan justo quis sem tincidunt, sed pulvinar leo cursus. Mauris quis porttitor est. Integer scelerisque odio risus, ac tincidunt turpis rutrum eu. Pellentesque finibus dapibus auctor. Vestibulum nec placerat ex. Maecenas accumsan turpis ac ipsum elementum, tincidunt pretium nisi dictum. Proin nec eleifend odio, a convallis neque.</p>
-  <p>Sed eu lectus eu ligula tincidunt pulvinar a sed magna. Etiam congue sapien sed neque pretium aliquet. Nunc quam elit, posuere non metus sit amet, viverra aliquet diam. Nulla molestie facilisis justo, ac ultrices nisl gravida in. Phasellus sit amet sem odio. Suspendisse a purus at leo aliquet accumsan. Donec sollicitudin mollis convallis. Cras nec sagittis augue. Phasellus dignissim justo sed eros sagittis pellentesque. Donec accumsan, orci sed fermentum imperdiet, purus diam efficitur enim, eu tincidunt lacus massa ac lectus. Quisque euismod neque sed turpis pharetra, eu posuere elit bibendum. Sed sagittis tempor consequat.</p>
-  <p>Aliquam quis ipsum ac nunc sagittis pretium eu et ante. Fusce vel magna et ligula lobortis tincidunt. Fusce non dui a felis ullamcorper scelerisque quis nec lorem. Curabitur aliquam massa eu sem euismod vulputate. Integer cursus mauris et est convallis ornare. Ut sollicitudin aliquet tempor. Curabitur id varius erat.</p>
-  <p>Donec aliquam lectus at nisi ullamcorper, quis aliquam nisl semper. Integer ultrices orci vel libero porttitor posuere. Ut aliquet ut nibh non mollis. Ut dignissim nibh vitae pharetra ultrices. Nulla facilisi. Aliquam at interdum ante. Nullam purus quam, iaculis et ligula at, rhoncus pellentesque libero. Suspendisse blandit malesuada aliquam.</p>
+<main class="container">
+  <div class="container center">
+    <h2>Main content</h2>
+    <img src="img/logo.png" alt="Enrique3d Design's logo" style="width: 450px;">
+  </div>
+
+  <h2>Some images</h2>
+  <div class="container padding center">
+
+      <img src='img/loading.gif' data-src="img/32260974_10216258050550902_187556304078766080_n.jpg" alt="Crosswalk in Kaigan Dori Chūō-ku, Tokyo" onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/f15123200.jpg" alt="Puerto Chico Beach, Llanes (Asturias)" onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/f21593920.jpg" alt="Wild goat near Picos de Europa, Asturias" onclick="showImage(this)" class="thumbnail">
+
+      <img src='img/loading.gif' data-src="img/f7910464.jpg" alt="Shinobazu Pond, Tokyo" onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/IMG_2206.JPG" alt="View of Yokohama" onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/IMG_4466.JPG" alt="Wicked Shin Cosplay as Mogeko at Otakon 2018." onclick="showImage(this)" class="thumbnail">
+
+      <img src='img/loading.gif' data-src="img/IMG_5108.JPG" alt="Wicked Shin Cosplay as Mukuro Ikusaba at Otakon 2018." onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/IMG_5135.JPG" alt="Wicked Shin Cosplay as Mukuro Ikusaba at Otakon 2018." onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/IMG_4209.JPG" alt="Wicked Shin Cosplay as Mogeko at Otakon 2018 with my plushies." onclick="showImage(this)" class="thumbnail">
+
+      <img src='img/loading.gif' data-src="img/IMG_4522.JPG" alt="Blake and Weiss at the White House." onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/IMG_20170801_130614.jpg" alt="Blake at Ryōgoku Edo NOREN, Tokyo" onclick="showImage(this)" class="thumbnail">
+      <img src='img/loading.gif' data-src="img/IMG_20180429_165953.jpg" alt="Blake and Weiss at Fuji TV Headquarters, Tokyo." onclick="showImage(this)" class="thumbnail">
+
+  </div>
 </main>
 
 <footer class="container">
   <h2>footer</h2>
 </footer>
 
+<!-- Modal for full size images on click-->
+<div id="imageModalWindow" class="modal pointer" onclick="this.style.display='none'" >
+  <div class="container center">
+	   <h3 id="caption" class="green"></h3>
+		<img id="imageModal" class="image padding">
+    <p class="bot"></p>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="scripts/main.js"></script>
