@@ -1,48 +1,93 @@
-<!-- Metadata -->
 <!DOCTYPE html>
 
-<title>Enrique3d Design - Under construction</title>
+<title>Enrique3d Design</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    html{
-        font-family: "Comic Sans MS", cursive, sans-serif
-    }
-    body {
-        background-repeat: repeat;
-    }
-    p{
-        color: white;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }
-</style>
-<br>
-<br>
-<br>
-<img id="title" src="title0.png" alt="Enrique3d Design" style="max-width: 99%; max-height: 99%;">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p>Graphic Design Is My Passion</p>
-<script>
-    // Random imagery
-    var titles = ["failToLoad", "title0.png", "title1.png", "title2.png", "title3.png", "title4.png", "title5.png", "title6.png", "title7.png"]
-    var bgs = ["bg0.bmp", "bg1.bmp", "bg2.bmp", "bg3.bmp", "bg4.bmp", "bg5.bmp", "bg6.bmp"]
+<meta name="Description" content="Enrique3d Design">
+<meta name="theme-color" content="#294c83" />
 
-    var num = Math.floor( Math.random() * titles.length );
-    document.getElementById("title").src = 'wip/' + titles[num];
+<meta property="og:title" content="Enrique3d Design" />
+<meta property="og:type" content="profile" />
+<meta property="og:url" content="https://enrique3ddesign.online/" />
+<meta property="og:description" content="Enrique3d DesignEnrique3d Design" />
+<meta property="og:image" content="https://enrique3ddesign.online/img/default.png" />
 
-    num = Math.floor( Math.random() * bgs.length );
-    document.body.background = 'wip/' + bgs[num]
+<link rel="icon" href="./img/favicon.png">
 
-    //10% chance of Geedis. GEEDIS!!
-    num = Math.floor( Math.random() * 100 );
-    if(num <=10)
-        document.write('<div style="position: fixed;bottom: 0;right: 0;"><img src="wip/geedis.png" align="right" style="max-width: 50%; max-height: 50%;"><p style="font-size: 30px; text-align: right;">This website belongs to Geedis now!</p></div>')
-</script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<header class="top">
+  <div class="flex center green">
+    <img src="img/animated-banner.gif" alt="Enrique3d Design's logo" class="image">
+  </div>
+
+  <div class="flex center blue">
+    <h1 id="title">Enrique3D design</h1>
+  </div>
+</header>
+
+<main>
+  <section>
+    <p>Me llamo Enrique Diego gonzalez. Soy modelador 3D, aunque tengo dominio de 2d y pixel art.</p>
+    <p>Cursé mis estudios en ESNE, en el grado universtario de "desarrollo de videojuegos".</p>
+  </section>
+
+  <section>
+    <p>Estos son algunos de los programas que utilizo habitualmente para el desarrollo de mi trabajo.
+   
+    <div class="flex logos">
+      <div class="flex column center">
+        <img src="./img/zbrush.png" alt="Zbrush logo">
+        <span>Zbrush</span>
+      </div>
+      <div class="flex column center">
+        <img src="./img/3ds-max.png" alt="3ds Max logo" >
+        <span>3ds Max</span>
+      </div>
+      <div class="flex column center">
+        <img src="./img/marmoset.png" alt="Marmoset Toolbar logo">
+        <span>Marmoset Toolbar</span>
+      </div>
+      <div class="flex column center">
+        <img src="./img/substance painter.png" alt="Substance Painter logo">
+        <span>Substance Painter</span>
+      </div>
+      <div class="flex column center">
+        <img src="./img/marvelous.png" alt="Marvelous design logo">
+        <span>Marvelous design</span>
+      </div>
+      <div class="flex column center">
+        <img src="./img/unreal-engine.png" alt="Unreal Engine logo">
+        <span>Unreal Engine</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p>A demás de mis capacidades, soy una persona abierta y extrovertida, con facilidad de comunicación; siempre que hay algo suelo estar metido o por lo menos siempre intentandolo.</p>
+    <p>Soy un apasionado de los deporte y sobre todo de las artes marciles, de las cuales actualmente soy practicante de kendo.</p>
+  </section>
+
+  <section>
+    <p>Si os gusta mi trabajo y quereis contactar conmigo, podeis hacerlo a traves de mis redes o por correo electrónico</p>
+    <div class="flex logos">
+      <div class="flex column center">
+        <a href="https://www.instagram.com/enrique3ddesing/"><img src="./img/instagram.png" alt="Instagram logo"></a>
+        <span><a href="https://www.instagram.com/enrique3ddesing/">Instagram</a></span>
+      </div>      
+      <div class="flex column center">
+        <a href="https://www.artstation.com/kike3ddesign"><img src="./img/artstation.png" alt="Artstation logo"></a>
+        <span><a href="https://www.artstation.com/kike3ddesign">Artstation</a></span>
+      </div>
+      <div class="flex column center">
+        <a href="mailto:kike3ddesing@gmail.com"><img src="./img/email.png" alt="Email Icon"></a>
+        <span><a href="mailto:kike3ddesing@gmail.com">Email</a></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="./scripts/main.js"></script>
