@@ -9,7 +9,7 @@ function updateMargin() {
   document.getElementsByTagName("BODY")[0].onresize = updateMargin
   
   updateMargin()
-
+/*
   function scrollEvent() {
     let title = document.getElementById('title')
 
@@ -25,4 +25,5 @@ function updateMargin() {
     
 }
 
-window.addEventListener('scroll', scrollEvent)
+ window.addEventListener('scroll', scrollEvent)
+*/
